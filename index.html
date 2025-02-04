@@ -6,7 +6,17 @@
     <title>Tic Tac Toe</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="init()">
+    <h1>Tic Tac Toe</h1>
+    <p>Aktueller Spieler</p>
+    <p id="currentPlayer">
+        <svg width="70" height="70" viewBox="0 0 70 70" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="35" cy="35" r="30" fill="none" stroke="#00B0EF" stroke-width="8">
+              <animate attributeName="stroke-dasharray" from="0, 188.4" to="188.4, 0" dur="0.325s" />
+            </circle>
+          </svg>
+    </p>
+    <div id="container" class="container"></div> 
     <script src="script.js"></script>
 </body>
 </html>
